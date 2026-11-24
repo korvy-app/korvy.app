@@ -1,0 +1,34 @@
+:root { --navy:#1E2238; --coral:#E86F52; --cream:#F7F2EA; --amber:#F2A93B; --ink:#e9e6f0; --muted:#b9b6c8; }
+* { box-sizing: border-box; }
+html { color-scheme: dark; }
+body { margin:0; overflow-wrap:anywhere; background:var(--navy); color:var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+a { color: var(--amber); }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+header { display:flex; align-items:center; gap:14px; padding:22px 0; }
+header img { width:44px; height:44px; border-radius:11px; }
+header a.brand { color:var(--cream); text-decoration:none; font-weight:700; font-size:22px; }
+header nav { margin-left:auto; display:flex; gap:18px; font-size:15px; }
+header nav a { color:var(--muted); text-decoration:none; }
+.hero { display:grid; grid-template-columns: 1.1fr .9fr; gap:40px; align-items:center; padding:40px 0 60px; }
+h1 { font-size: clamp(40px, 7vw, 68px); line-height:1.05; margin:0 0 18px; color:var(--cream); letter-spacing:-1.5px; }
+.lead { font-size: 20px; color: var(--muted); margin: 0 0 28px; }
+.bar { width:70px; height:8px; border-radius:4px; background:var(--amber); margin-bottom:22px; }
+.buttons { display:flex; flex-wrap:wrap; gap:12px; }
+.btn { display:inline-block; padding:13px 20px; border-radius:14px; text-decoration:none; font-weight:600; background:var(--coral); color:#fff; }
+.btn.alt { background:transparent; border:1.5px solid #4a4f6e; color:var(--cream); }
+.btn.soon { opacity:.55; pointer-events:none; }
+.shots { display:flex; gap:16px; justify-content:center; }
+.shots img { width:46%; max-width:230px; border-radius:22px; box-shadow:0 20px 60px rgba(0,0,0,.45); }
+.grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; padding-bottom:60px; }
+.card { background:#262b45; border-radius:20px; padding:22px; }
+.card h3 { margin:0 0 8px; color:var(--cream); font-size:19px; }
+.card p { margin:0; color:var(--muted); font-size:15.5px; }
+footer { border-top:1px solid #33385a; padding:26px 0 40px; color:var(--muted); font-size:14px; }
+.doc { max-width: 760px; padding-bottom: 60px; }
+.doc h1 { font-size: 40px; }
+.doc h2 { color: var(--cream); margin-top: 34px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { overflow-wrap:anywhere; }
+.doc, main { min-width:0; }
+th, td { text-align:left; padding:8px 10px; border-bottom:1px solid #3a3f61; vertical-align: top; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } header nav { gap:12px; } }
